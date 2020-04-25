@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap");
+
+body {
+    margin: 0;
+    font-family: Montserrat;
+}
+
+/* Button */
+button {
+    display: inline-block;
+    line-height: 40px;
+    padding: 0.3em 0.5em;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    background: #fff;
+    border: none;
+    border-radius: 0.5em;
+    font-size: 1.5em;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #7795f8;
+    outline: none;
+}
+
+button:hover {
+    background: #7795f8;
+    color: #fff;
+    cursor: pointer;
+}
+/* Header */
+header {
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1485841890310-6a055c88698a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80);
+    /* Cover works like a phone cover that covers an area and do not repeated */
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 0;
+    font-size: 3em;
+}
+
+h1,
+h2,
+a {
+    font-weight: 300;
+}
+
+#cards p {
+    line-height: 1.8em;
+    color: #525f7f;
+}
+
+#cards h3 {
+    color: #24b47e;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+/* Main section */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f6f9fc;
+}
+
+main h2 {
+    margin-top: 2em;
+    color: #6772e5;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+#cards {
+    display: flex;
+    background: #fff;
+    margin: 2em 2em;
+    border-radius: 1em;
+}
+
+#cards section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em;
+}
+
+#cards section:first-of-type {
+    border-right: 2px solid #f6f9fc;
+}
+
+#cards img {
+    width: 66px;
+}
+
+#cards a {
+    color: #6772e5;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+/* For Medium Devices */
+@media screen and (max-width: 900px) {
+    #cards {
+        flex-direction: column;
+    }
+    #cards section:first-of-type {
+        border-left: none;
+        border-bottom: 2px solid #f6f9fc;
+    }
+    header h1 {
+        font-size: 2.5em;
+    }
+    header h2 {
+        font-size: 1.5em;
+    }
+    main h2 {
+        font-size: 1.5em;
+    }
+}
+
+/* For Small devices */
+@media screen and (max-width: 700px) {
+    header {
+        height: 50vh;
+    }
+    header h1 {
+        font-size: 1.8em;
+    }
+    header h2 {
+        font-size: 1.2em;
+    }
+    main h2 {
+        font-size: 1.2em;
+    }
+    button {
+        font-size: 1em;
+    }
+
+    #cards h3 {
+        font-size: 1em;
+    }
+    #cards section {
+        padding: 2em;
+    }
+}
